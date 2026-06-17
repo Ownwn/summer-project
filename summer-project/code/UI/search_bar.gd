@@ -1,6 +1,6 @@
 extends Control
 
-const ITEM_SCENE= preload("res://scenes/SearchItem.tscn")
+const ITEM_SCENE= preload("res://scenes/UI/search_item.tscn")
 
 @onready var text_field : LineEdit = $LineEdit
 @onready var animation : AnimationPlayer = $AnimationPlayer

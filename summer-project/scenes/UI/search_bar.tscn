@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bc81uqbbdp3h7"]
 
-[ext_resource type="Script" uid="uid://db0iys454q66s" path="res://code/scripts/search_bar.gd" id="1_0flki"]
+[ext_resource type="Script" uid="uid://db0iys454q66s" path="res://code/UI/search_bar.gd" id="1_0flki"]
 [ext_resource type="FontFile" uid="uid://gohyc31jgrt6" path="res://assets/CircularStd-Black.otf" id="2_koqvg"]
 [ext_resource type="Texture2D" uid="uid://c2xxoi1he205p" path="res://assets/loading_spritesheet.png" id="3_yr6ut"]
 

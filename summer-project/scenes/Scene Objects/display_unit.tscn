@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://di2oih00xqvpd"]
 
-[ext_resource type="Script" uid="uid://762skfofg1ka" path="res://code/scripts/display_unit.gd" id="1_xyvsa"]
+[ext_resource type="Script" uid="uid://762skfofg1ka" path="res://code/Scene Objects/display_unit.gd" id="1_xyvsa"]
 
 [sub_resource type="TorusMesh" id="TorusMesh_0mvql"]
 inner_radius = 0.113

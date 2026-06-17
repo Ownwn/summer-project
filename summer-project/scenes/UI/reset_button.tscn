@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://x0pe2oxiqlbx"]
 
-[ext_resource type="Script" uid="uid://bu5g3grghfeun" path="res://code/scripts/reset_button.gd" id="1_i5ybq"]
+[ext_resource type="Script" uid="uid://bu5g3grghfeun" path="res://code/UI/reset_button.gd" id="1_i5ybq"]
 [ext_resource type="Texture2D" uid="uid://cfsatr4xnar0h" path="res://assets/reset_spritesheet.png" id="1_m0ji7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i5ybq"]

@@ -1,6 +1,5 @@
 extends Node
 var all_albums : Array[Album] = []
-var music_directory : String = "res://assets/music/"
 var request_creator : SpotifyRequests = SpotifyRequests.new()
 
 var CURRENT_IN_USE_RECORD : Record
@@ -8,7 +7,6 @@ var CURRENT_IN_USE_RECORD : Record
 signal user_connected
 
 ##initialize display records with set choices to show user how to play music
-##TODO be changed at runtime by user
 func initialize_display_records():
 	add_child(request_creator)
 	await request_creator.start_auth()

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c6uttkpggem10"]
 
 [ext_resource type="ArrayMesh" uid="uid://68ggu26ajt8r" path="res://assets/godotasset.obj" id="1_4flbx"]
-[ext_resource type="Script" uid="uid://dnukcn01516kr" path="res://code/scripts/recordplayer.gd" id="1_onrkg"]
+[ext_resource type="Script" uid="uid://dnukcn01516kr" path="res://code/Scene Objects/recordplayer.gd" id="1_onrkg"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g2els"]
 albedo_color = Color(0.49354547, 0.49354553, 0.49354553, 1)
