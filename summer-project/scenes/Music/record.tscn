@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dbnp2l6dop46p"]
 
-[ext_resource type="Script" uid="uid://cqpa0dsi3vgxp" path="res://code/scripts/record.gd" id="1_egwgl"]
-[ext_resource type="PackedScene" uid="uid://flkdql0wopio" path="res://scenes/record_disk.tscn" id="2_isq0c"]
+[ext_resource type="Script" uid="uid://cqpa0dsi3vgxp" path="res://code/Music/record.gd" id="1_egwgl"]
+[ext_resource type="PackedScene" uid="uid://flkdql0wopio" path="res://scenes/Music/record_disk.tscn" id="2_isq0c"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_gderf"]
 
@@ -9,6 +9,8 @@
 size = Vector3(1, 1, 0.05)
 
 [sub_resource type="BoxMesh" id="BoxMesh_gderf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r8o5k"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_isq0c"]
 size = Vector3(1, 1, 1.7)
@@ -130,6 +132,7 @@ shape = SubResource("BoxShape3D_gderf")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.03244384, 0, 0, 0)
 mesh = SubResource("BoxMesh_gderf")
 skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_r8o5k")
 
 [node name="Area3D" type="Area3D" parent="RigidBody3D/OuterCase" unique_id=1157292496]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0.4724662, 0, 0)

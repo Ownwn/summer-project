@@ -22,8 +22,8 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Global="*res://code/scripts/global.gd"
-MusicManager="*res://code/scripts/music_manager.gd"
+Global="*res://code/global.gd"
+MusicManager="*res://code/Music/music_manager.gd"
 
 [display]
 
@@ -32,9 +32,14 @@ window/size/mode=3
 [file_customization]
 
 folder_colors={
-"res://assets/": "green",
+"res://assets/": "red",
 "res://code/": "blue",
-"res://scenes/": "purple"
+"res://code/Music/": "green",
+"res://code/Scene Objects/": "purple",
+"res://code/UI/": "teal",
+"res://scenes/": "purple",
+"res://scenes/Music/": "green",
+"res://scenes/UI/": "teal"
 }
 
 [input]

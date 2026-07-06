@@ -3,16 +3,19 @@ class_name Record extends Node3D
 
 @onready var hover_shader = load("res://code/shaders/hover_shader.gdshader")
 @onready var case : MeshInstance3D = $RigidBody3D/OuterCase
-@onready var animator = $AnimationPlayer
+@onready var animator : AnimationPlayer = $AnimationPlayer
 @onready var camera = $"../../../Camera3D"
 @onready var parent_record = $"."
 @onready var disk : RecordDisk = $RigidBody3D/RecordDisk
 @onready var physics_body : RigidBody3D = $RigidBody3D
 @onready var image_plane : MeshInstance3D = $RigidBody3D/ImagePlane
+@onready var collisions : CollisionShape3D = $RigidBody3D/CollisionShape3D
 
 var base_position
 var base_rotation
 var dummy_record
+
+var mesh_color : Color
 
 var record_state : RecordState
 var base_state : RecordState

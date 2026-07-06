@@ -1,6 +1,5 @@
 extends Node
 var all_albums : Array[Album] = []
-var music_directory : String = "res://assets/music/"
 var request_creator : SpotifyRequests = SpotifyRequests.new()
 
 var CURRENT_IN_USE_RECORD : Record
@@ -8,7 +7,6 @@ var CURRENT_IN_USE_RECORD : Record
 signal user_connected
 
 ##initialize display records with set choices to show user how to play music
-##TODO be changed at runtime by user
 func initialize_display_records():
 	add_child(request_creator)
 	await request_creator.start_auth()
@@ -70,7 +68,9 @@ func load_record_data(record : Record, album : Album):
 	#change rest of record to average color
 	accumulated_col /= 10
 	var back_material : StandardMaterial3D = StandardMaterial3D.new()
-	back_material.albedo_color = Color(accumulated_col.x, accumulated_col.y, accumulated_col.z)
+	var mesh_color : Color = Color(accumulated_col.x, accumulated_col.y, accumulated_col.z)
+	back_material.albedo_color = mesh_color
+	record.mesh_color = mesh_color
 	record.case.material_override = back_material
 
 
